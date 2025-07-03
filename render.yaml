@@ -1,0 +1,15 @@
+# Exported from Render on 2025-07-03T17:28:17Z
+services:
+- type: web
+  name: Vuleka-Construction-Services-Pty-Ltd
+  runtime: go
+  repo: https://github.com/VulekaConstructionServices/Vuleka-Construction-Services-Pty-Ltd
+  plan: free
+  envVars:
+  - key: Vuleka
+    sync: false
+  region: oregon
+  buildCommand: go build -tags netgo -ldflags '-s -w' -o app
+  startCommand: Vuleka
+  autoDeployTrigger: commit
+version: "1"
