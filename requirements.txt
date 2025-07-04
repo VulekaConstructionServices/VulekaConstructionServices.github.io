@@ -1,0 +1,4 @@
+flask
+flask-mail
+python-dotenv
+fpdf
